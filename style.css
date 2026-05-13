@@ -1,0 +1,337 @@
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Ubuntu", sans-serif;
+}
+
+/* ---------- root variables--------------- */
+
+:root {
+
+    /* common */
+    --common-bold-font: bold;
+
+    /* header */
+    --header-primary-bg: rgb(211, 238, 238);
+    --header-primary-shadow: #7e7a7a;
+    --header-font-size: 2.85rem;
+    --header-para-font-size: 1.20rem;
+
+    /* main-container */
+    --main-primary-bg: transparent;
+
+    /* common button */
+    --common-btn-primary-bg: rgb(96, 96, 215);
+    --common-btn-color: #fff;
+    --comon-btn-font-size: 1.20rem;
+
+    /* copy button */
+    --copy-btn-width: 150px;
+
+    /* label */
+    --label-font-size: 1.25rem;
+
+    /* checkbox */
+    --checkbox-accent-color: #448ded;
+    --checkbox-width: 25px;
+    --checkbox-height: 25px;
+
+    /* slider */
+    --slider-width: 220px;
+    --slider-height: 12px;
+    --slider-border-color: #c5d6e0;
+
+    /* slider button */
+    --slider-btn-width: 50px;
+    --slider-btn-height: 50px;
+    --slider-btn-fontSize: 1.50rem;
+    --slider-btn-hover-primary-bg: #000;
+    --slider-btn-hover-primary-color: #fff;
+
+    /* password types */
+    --psd-primary-color: #071d2b;
+    --veryWeak-psd-primary-bg: #d93511;
+    --veryWeak-primary-color: #fff;
+    --weak-psd-primary-bg: #ffb370;
+    --good-psd-primary-bg: #ffddbf;
+    --strong-psd-primary-bg: #d5f2a5;
+    --veryStrong-psd-primary-bg: #9ae437;
+
+    /* popUp */
+    --popUp-primary-bg: rgba(255, 255, 255, 0.70);
+    --popUp-boxShadow-bg: rgba(0, 0, 0, 0.894);
+}
+
+/* ----------common elements styling--------------- */
+
+#passwordText {
+    display: inline-block;
+    width: 65%;
+    height: 50px;
+    border: 1px solid darkgray;
+    border-radius: 30px;
+    font-size: 1.25rem;
+    font-weight: 850;
+    margin-right: 15px;
+    padding: 12px 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.commonBtn {
+    cursor: pointer;
+    margin-right: 15px;
+    padding: 15px 25px;
+    font-size: var(--comon-btn-font-size);
+    font-weight: bold;
+    background-color: var(--common-btn-primary-bg);
+    color: var(--common-btn-color);
+    border: none;
+    border-radius: 30px;
+    transition: 0.3s ease;
+}
+
+.commonBtnDiv{
+    display: flex;
+}
+
+.commonBtn:hover {
+    transform: scale(1.025);
+    box-shadow: 0px 0px 5px black;
+}
+
+.commonPasswordSection {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin: 15px 0;
+    font-size: 1.125rem;
+}
+
+#copyBtn {
+    width: var(--copy-btn-width);
+}
+
+label {
+    font-weight: var(--common-bold-font);
+    font-size: var(--label-font-size);
+    margin-right: 25px;
+}
+
+input[type="checkbox"] {
+    width: var(--checkbox-width);
+    height: var(--checkbox-height);
+    accent-color: var(--checkbox-accent-color);
+    margin-right: 8px;
+}
+
+#slider {
+    width: var(--slider-width);
+    height: var(--slider-height);
+    border: 1px solid var(--slider-border-color);
+    border-radius: 8px;
+    outline: none;
+}
+
+.sliderBtn {
+    cursor: pointer;
+    margin: 0 15px;
+    width: var(--slider-btn-width);
+    height: var(--slider-btn-height);
+    border: 1px solid black;
+    border-radius: 50%;
+    font-size: var(--slider-btn-fontSize);
+    font-weight: 200;
+    transition: 0.3s ease;
+}
+
+.sliderBtn:hover {
+    background-color: var(--slider-btn-hover-primary-bg);
+    color: var(--slider-btn-hover-primary-color);
+    transform: scale(1.25);
+}
+
+
+/* types of passwords styling */
+
+.veryWeakPassword {
+    background-color: var(--weak-psd-primary-bg);
+    color: var(--weak-primary-color);
+}
+
+.weakPassword {
+    background-color: var(--weak-psd-primary-bg);
+    color: var(--psd-primary-color);
+}
+
+.goodPassword {
+    background-color: var(--good-psd-primary-bg);
+}
+
+.strongPassword {
+    background-color: var(--strong-psd-primary-bg);
+}
+
+.veryStrongPassword {
+    background-color: var(--veryStrong-psd-primary-bg);
+}
+
+
+/* ----------header styling--------------- */
+
+#header {
+    background-color: var(--header-primary-bg);
+    box-shadow: -25px -5px 15px 5px var(--header-primary-shadow);
+    text-align: center;
+    padding: 20px 0;
+}
+
+#header>h1 {
+    font-size: var(--header-font-size);
+    margin-bottom: 25px;
+}
+
+#header p {
+    font-size: var(--header-para-font-size);
+    font-style: italic;
+}
+
+/* ----------main container styling--------------- */
+
+#mainContainer {
+    width: 90%;
+    height: auto;
+    padding: 30px 5px;
+    background-color: var(--main-primary-bg);
+    margin: 0 auto;
+    display: flex;
+}
+
+/* ----------password image section styling--------------- */
+
+.passwordImgSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+}
+
+.houseImages {
+    width: 100%;
+}
+
+#houseImage1,
+#houseImage2,
+#houseImage3,
+#houseImage4,
+#houseImage5 {
+    display: none;
+}
+
+/* ----------password core section styling--------------- */
+
+.passwordCoreSection {
+    width: 60%;
+    padding: 25px 30px;
+}
+
+#characterText {
+    margin-right: 10%;
+}
+
+#passwordLengthText {
+    width: 35%;
+}
+
+/* ----------password strength section styling--------------- */
+
+.passwordStrengthSec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 35px;
+    font-size: 1.55rem;
+    font-weight: 850;
+}
+
+/* ------------------popUp box styling------------------- */
+
+#popUp {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 60%;
+    height: auto;
+    padding: 25px;
+
+    display: none;
+    justify-content: space-between;
+    gap: 15px;
+    border-radius: 35px;
+    z-index: 9999;
+
+    /* Slightly translucent white background */
+    background-color: var(--popUp-primary-bg);
+
+    /* The Magic Lines */
+    backdrop-filter: blur(20px) brightness(85%);
+    -webkit-backdrop-filter: blur(20px) brightness(90%);
+
+    /* Premium shadow */
+    box-shadow: 0px 0px 300px 250px var(--popUp-boxShadow-bg);
+}
+
+.popUpTextSection {
+    padding: 30px;
+}
+
+.popUpTextSection>h2 {
+    margin-bottom: 50px;
+    font-size: 1.95rem;
+}
+
+.popUpTextSection li {
+    margin: 15px 0;
+    font-size: 1.25rem;
+}
+
+.popUpImageSection {
+    position: relative;
+}
+
+#crossBtn>img {
+    width: 50px;
+    height: 50px;
+}
+
+#crossBtn {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    border: 3px solid black;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.25s ease;
+    font-weight: 800;
+}
+
+#crossBtn:hover {
+    background-color: #ffffff;
+    box-shadow: 0px 0px 5px #000;
+}
+
+.clipboardImage {
+    border-radius: 25px;
+    margin-top: 30%;
+}

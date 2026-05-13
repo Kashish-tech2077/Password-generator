@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
+</head>
+
+<body>
+
+    <!-- header part -->
+    <header id="header">
+        <h1>Secure Password Generator</h1>
+        <p id="headTagline">Securely generate your password, freely and instantly.</p>
+    </header>
+
+    <!-- aside (popUp box) part -->
+    <aside id="popUp">
+
+        <div class="popUpTextSection">
+            <h2>Password copied to clipboard</h2>
+            <ul>
+                <li>To paste the password somewhere else, press <strong>CTRL + V</strong> on your PC or <strong>Command
+                        + V</strong> on your Mac.</li>
+                <li>For Android or iOS devices including tablets, <strong>press and hold</strong> then select
+                    <strong>Paste.</strong>
+                </li>
+            </ul>
+        </div>
+
+        <div class="popUpImageSection">
+            <button id="crossBtn" type="button"><img src="./Assets/Images/Icons/crossIcon.png"
+                    alt="Cross Image"></button>
+            <img src="./Assets/Images/Others/popUpImage.png" alt="clipboardImage" class="clipboardImage">
+        </div>
+
+    </aside>
+
+
+    <!-- main container part -->
+    <main id="mainContainer">
+
+        <div class="passwordImgSection">
+            <img class="houseImages" id="houseImage1" src="./Assets/Images/House Images/houseImg1.png"
+                alt="House Image 1">
+            <img class="houseImages" id="houseImage2" src="./Assets/Images/House Images/houseImg2.png"
+                alt="House Image 2">
+            <img class="houseImages" id="houseImage3" src="./Assets/Images/House Images/houseImg3.png"
+                alt="House Image 3">
+            <img class="houseImages" id="houseImage4" src="./Assets/Images/House Images/houseImg4.png"
+                alt="House Image 4">
+            <img class="houseImages" id="houseImage5" src="./Assets/Images/House Images/houseImg5.png"
+                alt="House Image 5">
+        </div>
+
+        <div class="passwordCoreSection">
+            <div class="passwordinputSec commonPasswordSection">
+                <div id="passwordText"></div>
+                <div class="commonBtnDiv">
+                    <button type="button" class="commonBtn" id="copyBtn">Copy</button>
+                    <button type="button" class="commonBtn" id="generatePasswordBtn"><i
+                            class="fa-solid fa-arrow-rotate-left" style="color: #fff;"></i></button>
+                </div>
+            </div>
+
+            <div class="passwordSliderSec commonPasswordSection">
+                <p id="passwordLengthText"></p>
+                <div class="sliderDiv">
+
+                    <button type="button" class="sliderBtn" id="subtractBtn">–</button>
+                    <input type="range" name="passwordSlider" id="slider" min="1" max="50" value="16">
+                    <button type="button" class="sliderBtn" id="addBtn">+</button>
+                </div>
+            </div>
+
+            <div class="passwordCharacterSec commonPasswordSection">
+                <p id="characterText">Characters used:</p>
+
+                <!-- checkboxes input -->
+                <div class="checkboxDiv">
+                    <input type="checkbox" name="upperCasePassword" id="upperCaseCheckbox" class="passwordCheckbox"
+                        checked>
+                    <label for="upperCaseCheckbox">ABC</label>
+                    <input type="checkbox" name="lowerCasePassword" id="lowerCaseCheckbox" class="passwordCheckbox"
+                        checked>
+                    <label for="lowerCaseCheckbox">abc</label>
+                    <input type="checkbox" name="numberCasePassword" id="numberCaseCheckbox" class="passwordCheckbox"
+                        checked>
+                    <label for="numberCaseCheckbox">123</label>
+                    <input type="checkbox" name="symbolCasePassword" id="symbolCaseCheckbox" class="passwordCheckbox">
+                    <label for="symbolCaseCheckbox">!@$</label>
+                </div>
+            </div>
+
+            <div class="passwordStrengthSec commonPasswordSection">
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="./script.js"></script>
+    <script src="https://kit.fontawesome.com/3dd7962506.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

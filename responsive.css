@@ -1,0 +1,272 @@
+/* ---------------Responsive code--------------- */
+
+/* ------------------for ultra wide (4K & beyond) monitors------------- */
+@media screen and (min-width: 2000px) {
+    #mainContainer {
+        width: 60%;
+    }
+
+    .passwordStrengthSec {
+        width: 90%;
+    }
+}
+
+
+
+
+/* ------------------for normal wide monitors------------- */
+
+@media screen and (max-width: 1300px) {
+    html {
+        font-size: 14px;
+    }
+
+    #mainContainer {
+        width: 95%;
+    }
+
+    .passwordCoreSection {
+        padding: 25px 15px;
+    }
+
+    #slider {
+        width: auto;
+    }
+
+    .passwordStrengthSec {
+        width: 90%;
+        margin: 2px auto;
+    }
+
+    #characterText {
+        margin-right: 15%;
+    }
+
+    label {
+        margin-right: 12px;
+    }
+
+    input[type="checkbox"] {
+        width: 20px;
+        height: 20px;
+        margin-right: 2px;
+    }
+
+    .commonPasswordSection {
+        padding: 20px 5px;
+    }
+}
+
+
+
+
+/* ------------------for tablets------------- */
+
+@media screen and (max-width: 1000px) {
+    #header {
+        padding: 10px 15px;
+    }
+
+    #header>h1 {
+        font-size: 2.2rem;
+    }
+
+    #header p {
+        font-size: 1rem;
+    }
+
+    #mainContainer {
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 15px 0px;
+    }
+
+    .passwordImgSection {
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .passwordCoreSection {
+        width: 100%;
+        padding: 20px 0px;
+    }
+
+    .commonPasswordSection {
+        flex-direction: column;
+        padding: 4px 0px;
+        margin: 5px 0;
+        font-size: 1.05rem;
+    }
+
+    #passwordText {
+        width: 50%;
+        margin-right: 0;
+        margin-bottom: 15px;
+        font-size: 0.95rem;
+        height: auto;
+    }
+
+    .commonBtn {
+        width: 70px;
+    }
+
+    #copyBtn {
+        width: 120px;
+    }
+
+    #passwordLengthText {
+        width: auto;
+    }
+
+    .passwordSliderSec {
+        margin: 30px auto;
+    }
+
+    #slider {
+        width: 400px;
+    }
+
+    .sliderBtn {
+        margin: 0px 7px;
+        width: 40px;
+        height: 40px;
+        font-size: var(--slider-btn-fontSize);
+    }
+
+    .sliderDiv {
+        margin: 15px 0;
+    }
+
+    #characterText {
+        margin-right: 0%;
+        margin-bottom: 25px;
+    }
+
+    .passwordStrengthSec {
+        width: 70%;
+        margin: 2px auto;
+    }
+
+    label {
+        font-size: 1rem;
+        margin-right: 35px;
+    }
+
+    input[type="checkbox"] {
+        width: 15px;
+        height: 15px;
+        margin-right: 5px;
+    }
+
+    .checkboxDiv {
+        margin-bottom: 15px;
+    }
+}
+
+
+
+/* ------------------for mobiles------------- */
+
+@media screen and (max-width: 600px) {
+    #header {
+        padding: 10px 15px;
+    }
+
+    #header>h1 {
+        font-size: 2rem;
+        margin-bottom: 15px;
+    }
+
+    #header p {
+        font-size: 1rem;
+        line-height: 1.78;
+        font-style: italic;
+    }
+
+    #mainContainer {
+        flex-direction: column-reverse;
+        padding: 15px 0px;
+    }
+
+    .passwordImgSection {
+        width: 100%;
+    }
+
+    .passwordCoreSection {
+        width: 100%;
+        padding: 20px 0px;
+    }
+
+    .commonPasswordSection {
+        flex-direction: column;
+        padding: 4px 0px;
+        margin: 5px 0;
+        font-size: 1.05rem;
+    }
+
+    #passwordText {
+        width: 95%;
+        margin-right: 0;
+        margin-bottom: 15px;
+        font-size: 0.95rem;
+        height: auto;
+    }
+
+    .commonBtn {
+        width: 70px;
+    }
+
+    #copyBtn {
+        width: 120px;
+    }
+
+    #passwordLengthText {
+        width: auto;
+    }
+
+    .passwordSliderSec {
+        margin: 30px auto;
+    }
+
+    #slider {
+        width: auto;
+    }
+
+    .sliderBtn {
+        margin: 0px 7px;
+        width: 40px;
+        height: 40px;
+        font-size: var(--slider-btn-fontSize);
+    }
+
+    .sliderDiv {
+        margin: 15px 0;
+    }
+
+    #characterText {
+        margin-right: 0%;
+        margin-bottom: 25px;
+    }
+
+    .passwordStrengthSec {
+        margin: 2px auto;
+    }
+
+
+    label {
+        font-size: 1rem;
+        margin-right: 15px;
+    }
+
+    input[type="checkbox"] {
+        width: 15px;
+        height: 15px;
+        margin-right: 0px;
+    }
+
+    .checkboxDiv {
+        margin-bottom: 15px;
+    }
+}
