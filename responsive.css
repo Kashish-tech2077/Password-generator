@@ -12,13 +12,11 @@
 }
 
 
-
-
 /* ------------------for normal wide monitors------------- */
 
 @media screen and (max-width: 1300px) {
     html {
-        font-size: 14px;
+        font-size: 15px;
     }
 
     #mainContainer {
@@ -30,7 +28,7 @@
     }
 
     #slider {
-        width: auto;
+        width: 160px;
     }
 
     .passwordStrengthSec {
@@ -58,8 +56,6 @@
 }
 
 
-
-
 /* ------------------for tablets------------- */
 
 @media screen and (max-width: 1000px) {
@@ -69,23 +65,22 @@
 
     #header>h1 {
         font-size: 2.2rem;
+        margin-bottom: 15px;
     }
 
     #header p {
         font-size: 1rem;
+        line-height: 1.8;
     }
 
     #mainContainer {
         flex-direction: column-reverse;
-        align-items: center;
         padding: 15px 0px;
     }
 
     .passwordImgSection {
         width: 60%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        margin: 10px auto;
     }
 
     .passwordCoreSection {
@@ -97,14 +92,14 @@
         flex-direction: column;
         padding: 4px 0px;
         margin: 5px 0;
-        font-size: 1.05rem;
+        font-size: 1.25rem;
     }
 
     #passwordText {
         width: 50%;
         margin-right: 0;
         margin-bottom: 15px;
-        font-size: 0.95rem;
+        font-size: 1.0rem;
         height: auto;
     }
 
@@ -113,11 +108,12 @@
     }
 
     #copyBtn {
-        width: 120px;
+        width: 100px;
     }
 
     #passwordLengthText {
         width: auto;
+        margin-top: 15px;
     }
 
     .passwordSliderSec {
@@ -136,7 +132,9 @@
     }
 
     .sliderDiv {
-        margin: 15px 0;
+        margin: 18px 0;
+        width: 100%;
+        text-align: center;
     }
 
     #characterText {
@@ -146,7 +144,9 @@
 
     .passwordStrengthSec {
         width: 70%;
-        margin: 2px auto;
+        font-size: 1.35rem;
+        margin: 10px auto;
+        padding: 10px 0;
     }
 
     label {
@@ -155,118 +155,111 @@
     }
 
     input[type="checkbox"] {
-        width: 15px;
-        height: 15px;
         margin-right: 5px;
     }
 
     .checkboxDiv {
         margin-bottom: 15px;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-}
 
+    /* popUp responsive code */
+
+    #popUp {
+        width: 80%;
+        padding: 20px;
+    }
+
+    .popUpTextSection {
+        padding: 15px;
+    }
+
+    .popUpTextSection>h2 {
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+    }
+
+    .popUpTextSection li {
+        font-size: 1rem;
+    }
+
+    #crossBtn>img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .clipboardImage {
+        margin-top: 25%;
+        width: 180px;
+    }
+
+}
 
 
 /* ------------------for mobiles------------- */
 
 @media screen and (max-width: 600px) {
-    #header {
-        padding: 10px 15px;
-    }
 
     #header>h1 {
         font-size: 2rem;
-        margin-bottom: 15px;
-    }
-
-    #header p {
-        font-size: 1rem;
-        line-height: 1.78;
-        font-style: italic;
     }
 
     #mainContainer {
-        flex-direction: column-reverse;
-        padding: 15px 0px;
+        padding: 25px 0px;
     }
 
     .passwordImgSection {
         width: 100%;
     }
 
-    .passwordCoreSection {
-        width: 100%;
-        padding: 20px 0px;
-    }
-
     .commonPasswordSection {
-        flex-direction: column;
-        padding: 4px 0px;
-        margin: 5px 0;
         font-size: 1.05rem;
     }
 
     #passwordText {
         width: 95%;
-        margin-right: 0;
-        margin-bottom: 15px;
-        font-size: 0.95rem;
-        height: auto;
-    }
-
-    .commonBtn {
-        width: 70px;
-    }
-
-    #copyBtn {
-        width: 120px;
-    }
-
-    #passwordLengthText {
-        width: auto;
-    }
-
-    .passwordSliderSec {
-        margin: 30px auto;
     }
 
     #slider {
-        width: auto;
-    }
-
-    .sliderBtn {
-        margin: 0px 7px;
-        width: 40px;
-        height: 40px;
-        font-size: var(--slider-btn-fontSize);
-    }
-
-    .sliderDiv {
-        margin: 15px 0;
-    }
-
-    #characterText {
-        margin-right: 0%;
-        margin-bottom: 25px;
+        width: 60%;
     }
 
     .passwordStrengthSec {
-        margin: 2px auto;
+        width: 90%;
+        font-size: 1.20rem;
     }
-
 
     label {
-        font-size: 1rem;
-        margin-right: 15px;
+        margin-right: 20px;
     }
 
-    input[type="checkbox"] {
-        width: 15px;
-        height: 15px;
-        margin-right: 0px;
+    /* popUp responsive code */
+
+    #popUp {
+        width: 90%;
+        flex-direction: column;
     }
 
-    .checkboxDiv {
-        margin-bottom: 15px;
+    .popUpTextSection {
+        margin-top: 40px;
     }
+
+    .popUpTextSection>h2 {
+        margin-bottom: 20px;
+    }
+
+    .popUpImageSection {
+        display: flex;
+        justify-content: center;
+    }
+
+    .clipboardImage {
+        margin-top: 0%;
+        width: 120px;
+    }
+
 }
